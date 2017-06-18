@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#ee0000</color>
+    <color name="sred">#be0000</color>
+    <color name="sgreen">#93cb22</color>
+    <color name="sblue">#0088ff</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="gray">#FF808080</color>
+    <color name="darkgray">#FF333333</color>
+    <color name="lightgray">#FFacacac</color>
+    <color name="lightlightgray">#FFf0f1f3</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparentgray">#88888888</color>
+    
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#00000000</color>
+    <color name="capture_text_cover_bg">#99535353</color>
+    <color name="seek_bar_text">#fff6f6f6</color>
+    <color name="home_title_text">#1A1A1A</color>
+    <color name="home_cell_name_text">#999999</color>
+    
+    <!-- SearchActivity -->
+    <color name="history_search">#999999</color>
+    <color name="list_item_text">#222222</color>
+    <color name="search_background">#f6f6f6</color>
+    <!-- SearchResultActivity -->
+    <color name="title_black">#333333</color>
+    <color name="other_gray">#a3a3a3</color>
+    <color name="length_gray">#a3a3a3</color>
+</resources>

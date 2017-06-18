@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.example.bestvplayerdemo"
+        minSdkVersion 14
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+repositories {flatDir {dirs 'libs'}}
+
+dependencies {
+    //compile project(':temobiPlayerLib')
+    compile 'com.android.support:support-v4:23.4.0'
+    compile(name:'temobiPlayerLib-debug', ext:'aar')
+    // compile 'com.google.code.gson:gson:2.3.1'
+    //compile files('libs/glide-3.6.0.jar')
+}

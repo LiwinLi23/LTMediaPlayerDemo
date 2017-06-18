@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/simpletest_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MergeRootFrame" >
+
+    <FrameLayout
+        android:id="@+id/frame_v"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="visible" >
+
+        <com.bestv.app.view.VideoViewShell
+            android:id="@+id/videoView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ImageButton
+            android:id="@+id/imgBtnResize"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@null"
+            android:src="@drawable/ad_close" />
+
+        <SeekBar
+            android:id="@+id/seek"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:max="100"
+            android:progress="0" >
+        </SeekBar>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0000ff"/>
+
+            <TextView
+                android:id="@+id/txt_total_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0000ff"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/frame_control"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <!--SeekBar
+            android:id="@+id/seek"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0" >
+        </SeekBar-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnPlayPause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="play/pause" />
+
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="stop" />
+
+            <Button
+                android:id="@+id/btnLayoutScale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SCALE" />
+
+            <Button
+                android:id="@+id/btnLayoutStretch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STRETCH" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_download_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/txt_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+</LinearLayout>
