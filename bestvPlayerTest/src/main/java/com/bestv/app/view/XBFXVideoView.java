@@ -22,8 +22,8 @@ import android.widget.RelativeLayout.LayoutParams;
 public class XBFXVideoView extends SurfaceView {
 
     private Context mContext;
-    private final String TAG = "XBFXVideoView";
-
+    private final String TAG = "LTVideoView";
+    private findl String NEW_TAG = "LTVideoView";
     private int mXBFXPlayerType = XBFXAndroidMediaPlayer.PLAYER_TYPE_SW;
 
     //	private final int STATE_ERROR = -1;
